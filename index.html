@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Circle M Meats Steak Survey</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1 id='title'>Steak Survey</h1>
+        <p id='description'>Thanks for taking the time to help us bring you a quality product!</p>
+    </header>
+    <form id='survey-form'>
+        <div class="personal-info-input">
+            <label class='personal-info' id='name-label' for='name'> Full Name<p class="required">*</p>
+                <input id='name' type='text' placeholder='John Doe' required>
+            </label>
+            <label class='personal-info' id='email-label' for='email'> E-mail<p class="required">*</p>
+                <input id='email' type='email' placeholder='johndoe@domain.com' required>
+            </label>
+            <label class='personal-info' id='number-label'>Age (optional)
+                <input id='number' type='number' min='18' max='120' placeholder='age'>
+            </label>
+            <label id='dropdown-label'>How did you hear about us?<p class="required">*</p>
+                <select id='dropdown'>
+                  <option>--Choose an option--</option>
+                  <option>Facebook</option>
+                  <option>Instagram</option>
+                  <option>Word of Mouth</option>
+                  <option>Connections Magazine</option>
+                  <option>Newspaper</option>
+                  <option>Other</option>
+                </select>
+            </label>
+        </div>
+        <hr>
+        <div class="input-area">
+            <fieldset>
+                <h2>How do you prefer your steaks cooked?<p class="required">*</p></h2>
+                <div>
+                <label>
+                    <input type='radio' name='radio' value='rare'> Rare
+                </label>
+                </div>
+                <div>
+                <label>
+                    <input type='radio' name='radio' value='medium-rare'> Medium-rare
+                </label>
+                </div>
+                <div>
+                <label>
+                    <input type='radio' name='radio' value='medium'> Medium
+                </label>
+                </div>
+                <div>
+                <label>
+                    <input type='radio' name='radio' value='medium-well'> Medium-well
+                </label>
+                </div>
+                <div>
+                <label>
+                    <input type='radio' name='radio' value='well'> Well Done
+                </label>
+                </div>
+            </fieldset>
+        </div>
+        <hr>
+        <div class="input-area">
+            <h2>Select your favorite cuts:<p class="required">*</p></h2>
+            <fieldset>
+                <div>
+                    <input type='checkbox' value='ribeye'> Ribeye
+                </div>
+                <div>
+                    <input type='checkbox' value='kc'> KC Strip
+                </div>
+                <div>
+                    <input type='checkbox' value='filet'> Filet
+                </div>
+                <div>
+                    <input type='checkbox' value='sirloin'> Sirloin
+                </div>
+                <div>
+                    <input type='checkbox' value='tbone'> T-Bone
+                </div>
+                <div>
+                    <input type='checkbox' value='porterhouse'> Porterhouse
+                </div>
+              </fieldset>
+        </div>
+        <hr>
+        <div class="input-area">
+            <h2>Extra comments: (optional)</h2>
+            <textarea id="comments" placeholder="Add any extra comments..."></textarea>
+        </div>
+        <hr>
+        <div class="input-area">
+            <input id ='submit' type='submit'>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
